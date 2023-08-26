@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =7
+let g:netrw_dirhist_7='/Users/ysn/Dropbox/あるマのメモ書き/kotlin'
+let g:netrw_dirhist_6='/Users/ysn/repositories/pdf-rs-prototype/src/core'
+let g:netrw_dirhist_5='/Users/ysn/repositories/pdf-rs-prototype/src'
+let g:netrw_dirhist_4='/Users/ysn/repositories/pdf-rs-prototype'
+let g:netrw_dirhist_3='/Users/ysn/repositories/pdf-rs-prototype/examples/reader'
+let g:netrw_dirhist_2='/Users/ysn/repositories/pdf-rs-prototype/examples'
+let g:netrw_dirhist_1='/Users/ysn/repositories/pdf-rs-prototype'
+let g:netrw_dirhist_0='/Users/ysn/repositories/pdf-rs-prototype/src/core'
+let g:netrw_dirhist_9='/Users/ysn/repositories/pdf-rs-prototype/src'
+let g:netrw_dirhist_8='/Users/ysn/repositories/pdf-rs-prototype'

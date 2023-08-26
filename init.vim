@@ -38,7 +38,7 @@ call minpac#add('SirVer/ultisnips')
 " $HOME/.config/nvim/plugged/vim-snippets/snippets/ snipMate compatible
 " $HOME/.config/nvim/plugged/vim-snippets/UltiSnips/ for people who use vim-snippets with ultisnips (the snippet format is different)
 " The variable g:UltiSnipsSnippetDirectories can be used to specify different locations to look for snippets
-let g:UltiSnipsSnippetDirectories=[$HOME.'/Alexandria/UltiSnips']
+let g:UltiSnipsSnippetDirectories=[$HOME.'/.config/nvim/UltiSnips']
 
 " NERDTree
 call minpac#add('preservim/nerdtree')

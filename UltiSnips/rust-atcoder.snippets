@@ -24,10 +24,30 @@ for (${2:a}, ${3:b}) in ${4:ab} {
 ${0}
 endsnippet
 
-snippet ijiter
+snippet ijiter "h x w mass" b
 for i in ${1:0..h} {
 	for j in ${2:0..w} {
 		${0}
 	}
 }
 endsnippet
+
+snippet dikstra "" b
+endsnippet
+
+snippet allpathsearch "all path search with permutations in graph" b
+for path in (1..=n).permutations(n) {
+	// 経路コスト
+	let mut sum = 0;
+	for edge in path.windows(2) {
+		// 双方向であるため
+		if let Some(c) = hm.get(&(edge[0].min(edge[1]), edge[1].max(edge[0]))) {
+			sum += c;
+		} else {
+			break;
+		}
+	}
+	ans = ans.max(sum);
+}
+endsnippet
+

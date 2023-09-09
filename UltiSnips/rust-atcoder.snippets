@@ -32,6 +32,32 @@ for i in ${1:0..h} {
 }
 endsnippet
 
+snippet bsbk_cmp "cmp for monotonically increasing" b
+let cmp = |${1:b}: usize| { move |v: &usize| {
+	if v > &$1 {
+		std::cmp::Ordering::Greater
+	} else {
+		std::cmp::Ordering::Less
+	}
+}};
+endsnippet
+
+snippet bsbk "binary search by key" b
+match ${1:a}.binary_search_by(|v| {
+	if v == ${2:&b} {
+		std::cmp::Ordering::Equal
+	} else if v > $2 {
+		std::cmp::Ordering::Greater
+	} else {
+		std::cmp::Ordering::Less
+	}
+}) {
+	Ok(idx) => ${3},
+	Err(idx) => ${4},
+}
+endsnippet
+
+
 snippet dikstra "" b
 endsnippet
 
